@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in JS</title>
+</head>
+<body>
+    <h1>
+        Class in JS
+    </h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        class person{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+        }
+        person1 = new person('Tom Cruise',1962)
+        document.getElementById("p1").innerHTML = "My name is " + person1.name;
+        document.getElementById("p2").innerHTML = "I was born in " + person1.year;
+    </script>
+</body>
+</html>

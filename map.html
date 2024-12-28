@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Arrange and array</title>
+</head>
+<body>
+    <h1>
+        Map and Arrange and array
+    </h1>
+    <p id="p1"></p>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <script>
+        var numbers=[10,20,30,40,50,60,70,80,90,100];
+        document.getElementById("p1").innerHTML = numbers;
+        function ascending(){
+            numbers.sort(function(a,b){return a - b});
+            document.getElementById("p1").innerHTML = numbers;
+        }
+        function descending(){
+                numbers.sort(function(a,b) { return b - a });
+                document.getElementById("p1").innerHTML = numbers;
+            }
+    </script>
+</body>
+</html>
